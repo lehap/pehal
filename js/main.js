@@ -3,7 +3,7 @@ const counter = document.querySelector('.counter')
 const title = document.querySelector('.title')
 
 
-const firstRoundDate = new Date("Oct 6, 2023 15:30:0").getTime()
+const firstRoundDate = new Date("Oct 13, 2023 15:30:0").getTime()
 
 const rounds = [firstRoundDate]
 
