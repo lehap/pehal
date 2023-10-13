@@ -3,7 +3,7 @@ const counter = document.querySelector('.counter')
 const title = document.querySelector('.title')
 
 
-const firstRoundDate = new Date("Oct 13, 2023 15:30:0").getTime()
+const firstRoundDate = new Date("Oct 11, 2023 15:30:0").getTime()
 
 const rounds = [firstRoundDate]
 
@@ -27,12 +27,14 @@ function counterFunc(){
   let seconds = Math.floor((distance % (1000 * 60)) / 1000)
   
 
-  counter.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "
+  
 
   if (distance < 0) {
     clearInterval(counterInterval);
   }
+  counter.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "
 }
 counterFunc()
 
+window.alert("You know how to invoke me: the sigil.")
 const counterInterval = setInterval(counterFunc, 1000);
